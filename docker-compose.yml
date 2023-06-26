@@ -1,0 +1,8 @@
+version: "3"
+services:
+  nginx:
+    image: stevelan1995/wrds-research-portal:0.0.1
+    restart: always
+    ports:
+      - "80:80"
+      - "443:443"
