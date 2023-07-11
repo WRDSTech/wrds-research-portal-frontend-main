@@ -4,7 +4,7 @@
             <div class="row">
                 <div class="col-12 col-lg-4 mb-3">
                     <a href="http://www.wharton.upenn.edu" title="The Wharton School" target="_blank">
-                        <img src="@/assets/wharton_white.svg" alt="The Wharton School Logo" class="wrds-footer-logo ">
+                        <img src="/common/img/wharton_white.e7dd65c7.svg" alt="The Wharton School Logo" class="wrds-footer-logo ">
                     </a>
                     <a class="wrds-footer-text" href="https://wrds-www.wharton.upenn.edu/">Wharton Research Data Services</a>
                 <div class="border-white mt-3 border-top d-md-block d-lg-none"></div>
