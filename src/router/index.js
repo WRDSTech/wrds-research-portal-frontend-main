@@ -49,14 +49,14 @@ const routes = [
     name: '10KItemization',
     path: '/10k-itemization',
     beforeEnter () {
-      window.open('http://34.222.11.153:8888/', '_blank')
+      window.open('http://ec2-54-89-51-246.compute-1.amazonaws.com/10-k/', '_blank')
     }
   },
   {
     name: 'CompanyGraph',
     path: '/company-graph',
     beforeEnter () {
-      window.open('http://34.222.11.153:8080/', '_blank')
+      window.open('http://ec2-54-89-51-246.compute-1.amazonaws.com/graph/', '_blank')
     }
   },
   {

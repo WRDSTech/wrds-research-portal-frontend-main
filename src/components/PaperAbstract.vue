@@ -12,14 +12,14 @@
           <div class="project-intro">
             <h4 class="abstract">Abstract</h4>
             <p class="abstract-content">
-              Form 10-K report is a financial report disclosing the annual financial state of a public company. In this paper, we develop a Form 10-K Itemization system which can automatically segment all the Item sections in 10-K documents. The system is both effective and efficient. It reaches a retrieval rate of 93%.
+              Form 10-K report is a financial report disclosing the annual financial state of a public company. It is an important evidence to conduct financial analysis. In this paper, we develop a Form 10-K Itemization system which can automatically segment all the Item sections in 10-K documents. The system is both effective and efficient. It reaches a retrieval rate of 93%.
             </p>
-            </div>
+          </div>
           <el-button @click="$router.push({name: '10KItemization'})" type="plain" size="small" class="nav-button-search"> Try it out!</el-button>
         </el-card>
       </el-col>
       <el-col :span="24" :lg="12">
-        <el-card class="card-graph">
+        <el-card class="card-search">
           <hr/>
           <img src="@/assets/graph.svg" alt="Image 2" class="image" />
           <div slot="header" class="header">
@@ -28,10 +28,10 @@
           <div class="project-intro">
             <h4 class="abstract">Abstract</h4>
             <p class="abstract-content">
-              This study proposes a system to process financial reports and construct the public competitor graph to fill the void. Our method can retrieve more than 83\% competition relationship of the S\&P 500 index companies. Based on the output from our system, we construct a knowledge graph with more than 700 nodes and 1200 edges.
+              This study proposes a system to process financial reports and construct the public competitor graph to fill the void. Our method can retrieve more than 83% competition relationship of the S&P 500 index companies. Based on the output from our system, we construct a knowledge graph with more than 700 nodes and 1200 edges.
             </p>
           </div>
-          <el-button @click="$router.push({name: 'CompanyGraph'})" type="plain" size="small" class="nav-button-graph"> Try it out!</el-button>
+          <el-button @click="$router.push({name: 'CompanyGraph'})" type="plain" size="small" class="nav-button-search"> Try it out!</el-button>
         </el-card>
       </el-col>
     </el-row>
@@ -53,7 +53,7 @@
         </el-card>
       </el-col>
       <el-col :span="24" :lg="12">
-        <el-card class="card-graph">
+        <el-card class="card-search">
           <hr/>
           <img src="@/assets/novelty.svg" alt="Image 4" class="image" />
           <div slot="header" class="header">
@@ -237,9 +237,11 @@ export default {
 }
 
 .container {
-  margin: 0px;
+  margin: 0 auto;
   max-width: 1000px;
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .abstract-content{
@@ -272,23 +274,9 @@ img.image-square {
   transition: box-shadow .3s;
   margin-top: 20px;
   padding-top: 1%;
-  margin-left: -37.5%;
+  margin-left: -33%;
   width: 85%;
-  height: 93%;
-  object-fit: contain;
-  border-radius: 10px;
-  background-color: rgb(239, 239, 239);
-  display: inline-block;
-  position: relative;
-}
-
-.card-graph {
-  transition: box-shadow .3s;
-  margin-top: 20px;
-  padding-top: 1%;
-  margin-left: -27.5%;
-  width: 85%;
-  height: 93%;
+  height: 95%;
   object-fit: contain;
   border-radius: 10px;
   background-color: rgb(239, 239, 239);
@@ -317,14 +305,6 @@ img.image-square {
 .nav-button-search {
   width: 95%;
   margin:14px 0px;
-  background-color: rgba(0, 0, 0, 0.847);
-  color: white;
-  border-radius: 10px;
-}
-
-.nav-button-graph {
-  width: 100%;
-  margin: 0px;
   background-color: rgba(0, 0, 0, 0.847);
   color: white;
   border-radius: 10px;
