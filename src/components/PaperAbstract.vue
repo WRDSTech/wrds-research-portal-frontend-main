@@ -15,7 +15,7 @@
               Form 10-K report is a financial report disclosing the annual financial state of a public company. It is an important evidence to conduct financial analysis. In this paper, we develop a Form 10-K Itemization system which can automatically segment all the Item sections in 10-K documents. The system is both effective and efficient. It reaches a retrieval rate of 93%.
             </p>
           </div>
-          <el-button @click="$router.push({name: '10KItemization'})" type="plain" size="small" class="nav-button-search"> Try it out!</el-button>
+          <el-button @click="$router.push({name: '10KItemization'})" type="plain" size="small" class="nav-button-search"><span class="button-text">Try it out!</span></el-button>
         </el-card>
       </el-col>
       <el-col :span="24" :lg="12">
@@ -31,7 +31,7 @@
               This study proposes a system to process financial reports and construct the public competitor graph to fill the void. Our method can retrieve more than 83% competition relationship of the S&P 500 index companies. Based on the output from our system, we construct a knowledge graph with more than 700 nodes and 1200 edges.
             </p>
           </div>
-          <el-button @click="$router.push({name: 'CompanyGraph'})" type="plain" size="small" class="nav-button-search"> Try it out!</el-button>
+          <el-button @click="$router.push({name: 'CompanyGraph'})" type="plain" size="small" class="nav-button-search"><span class="button-text">Try it out!</span></el-button>
         </el-card>
       </el-col>
     </el-row>
@@ -48,8 +48,8 @@
             <p class="abstract-content">
               The quarterly financial statement, or Form 10-Q, is one of the most frequently required filings for US public companies to disclose financial and other important business information. This paper presents a solution for itemizing 10-Q files by complementing a rule-based algorithm with a Convolutional Neural Network (CNN) image classifier.
             </p>
-            </div>
-          <el-button @click="$router.push({name: 'TenQDemo'})" type="plain" size="small" class="nav-button-search"> Try it out!</el-button>
+          </div>
+          <el-button @click="$router.push({name: 'TenQDemo'})" type="plain" size="small" class="nav-button-search"><span class="button-text">Try it out!</span></el-button>
         </el-card>
       </el-col>
       <el-col :span="24" :lg="12">
@@ -65,12 +65,13 @@
               Using numeric and textual data extracted from over 50,000 finance articles in SSRN during 2001--2019, we examine the relationship between measured qualities and a paper’s readership, eventual outlet, and impact. Conventionality (semantic similarity with existent research) helps boost readership and publication prospects.
             </p>
           </div>
-          <el-button @click="$router.push({name: 'NoveltyInFinance'})" type="plain" size="small" class="nav-button-search"> Try it out!</el-button>
+          <el-button @click="$router.push({name: 'NoveltyInFinance'})" type="plain" size="small" class="nav-button-search"><span class="button-text">Try it out!</span></el-button>
         </el-card>
       </el-col>
     </el-row>
+    <div class = "other-pro">
     <h3 id="Projects" class="title-pro">Other Projects</h3>
-    <el-row type="flex" gutter="280">
+    <el-row type="flex">
       <el-col :span="24" :lg="24">
         <el-card class="project-card">
           <hr/>
@@ -85,13 +86,13 @@
               <p class="project-content">
                 The graph illustrates the trends in research, showcasing the number of papers published over a specified period and their corresponding percentages. It serves as a valuable tool for researchers, policymakers, and stakeholders in gauging the progress and impact of scholarly endeavors over time.
               </p>
-              <el-button @click="$router.push({name: 'ResearchTrend'})" type="plain" size="small" class="nav-button">Try it out!</el-button>
+              <el-button @click="$router.push({name: 'ResearchTrend'})" type="plain" size="small" class="nav-button"><span class="button-text">Try it out!</span></el-button>
             </div>
           </div>
         </el-card>
       </el-col>
     </el-row>
-    <el-row type="flex" gutter="280">
+    <el-row type="flex">
       <el-col :span="24" :lg="24">
         <el-card class="project-card">
           <hr/>
@@ -106,13 +107,13 @@
               <p class="project-content">
                 The footnote demo showcases instances where directors become entitled to full acceleration of vesting of equity awards upon retirement, based on their tenure on the board. It provides insights into the equity compensation practices and policies within the company and highlight specific transactions involving the issuance of shares subject to PRSU awards.
               </p>
-              <el-button @click="$router.push({name: 'Footnote'})" type="plain" size="small" class="nav-button">Try it out!</el-button>
+              <el-button @click="$router.push({name: 'Footnote'})" type="plain" size="small" class="nav-button"><span class="button-text">Try it out!</span></el-button>
             </div>
           </div>
         </el-card>
       </el-col>
     </el-row>
-    <el-row type="flex" gutter="280">
+    <el-row type="flex">
       <el-col :span="24" :lg="24">
         <el-card class="project-card">
           <hr/>
@@ -127,13 +128,13 @@
               <p class="project-content">
                 The sample research demo provides a glimpse into ongoing research activities and highlights a selection of projects from a diverse range of fields. It serves as a valuable resource for gaining insights into the current trends and areas of focus within the research community.
               </p>
-              <el-button @click="$router.push({name: 'ResearchDemo'})" type="plain" size="small" class="nav-button">Try it out!</el-button>
+              <el-button @click="$router.push({name: 'ResearchDemo'})" type="plain" size="small" class="nav-button"><span class="button-text">Try it out!</span></el-button>
             </div>
           </div>
         </el-card>
       </el-col>
     </el-row>
-    <el-row type="flex" gutter="280">
+    <el-row type="flex">
       <el-col :span="24" :lg="24">
         <el-card class="project-card">
           <hr/>
@@ -148,13 +149,13 @@
               <p class="project-content">
                 The 10K Itemization Demo (PostgreSQL) showcases sample entries that represents a specific company's filing details extracted from the Form 10-K, a comprehensive annual report filed by public companies in the United States. The demo provides key information such as the CIK (Central Index Key) code, company name, filing date, form type, and the specific item addressed in each entry.
               </p>
-              <el-button @click="$router.push({name: '10KSearchPg'})" type="plain" size="small" class="nav-button">Try it out!</el-button>
+              <el-button @click="$router.push({name: '10KSearchPg'})" type="plain" size="small" class="nav-button"><span class="button-text">Try it out!</span></el-button>
             </div>
           </div>
         </el-card>
       </el-col>
     </el-row>
-    <el-row type="flex" gutter="280">
+    <el-row type="flex">
       <el-col :span="24" :lg="24">
         <el-card class="project-card">
           <hr/>
@@ -169,12 +170,13 @@
               <p class="project-content">
                 The 10K Itemization Demo provides a specific entry from the dataset, featuring details about a company named Detonics Small Arms Ltd. This entry corresponds to their filing on Form 10-K/A, which is an amendment to the annual report, and is dated January 5, 2010. The entry is categorized under ITEM 9A, which typically pertains to disclosures related to controls and procedures.
               </p>
-              <el-button @click="$router.push({name: '10KSearch'})" type="plain" size="small" class="nav-button">Try it out!</el-button>
+              <el-button @click="$router.push({name: '10KSearch'})" type="plain" size="small" class="nav-button"><span class="button-text">Try it out!</span></el-button>
             </div>
           </div>
         </el-card>
       </el-col>
     </el-row>
+    </div>
   </div>
 </template>
 
@@ -197,6 +199,13 @@ export default {
   position: inherit;
 }
 
+.other-pro {
+  justify-content: center;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+}
+
 .intro-content {
   display: flex;
   justify-content: space-between;
@@ -204,8 +213,9 @@ export default {
 }
 
 .project-content {
-  margin-top: 5px;
-  margin-left: 40px;
+  text-align: justify;
+  margin-top: 2%;
+  margin-left: 4%;
 }
 
 .image-container {
@@ -217,12 +227,20 @@ export default {
   height: 80px;
 }
 
+.button-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 0.8rem;
+}
+
 .title-pub {
   margin-top: 3%;
   margin-left: -15%;
   margin-bottom: 2%;
   text-align: center;
-  font-size: 2.0vw;
+  font-size: 1.8rem;
   color: rgb(253, 253, 253);
   object-fit: contain;
 }
@@ -230,10 +248,10 @@ export default {
 .title-pro {
   margin-top: 8%;
   margin-left: -15%;
-  text-align: center;
-  font-size: 2.0vw;
+  font-size: 1.8rem;
   color: rgb(253, 253, 253);
   object-fit: contain;
+  position: relative;
 }
 
 .container {
@@ -252,7 +270,6 @@ export default {
 img.image {
   width: 287px;
   height: 120px;
-  margin: 0 0 11px;
   object-fit: contain;
   margin-top: 5px;
 }
@@ -289,13 +306,14 @@ img.image-square {
   margin-top: 20px;
   padding-bottom: 1%;
   margin-left: -16%;
-  width: 95%;
-  height: 80%;
+  width: 850px;
+  height: 150px;
   object-fit: contain;
   border-radius: 10px;
   background-color: rgb(239, 239, 239);
   position: relative;
   display: inline-block;
+  align-items: center;
 }
 
 .project-intro {
@@ -303,19 +321,21 @@ img.image-square {
 }
 
 .nav-button-search {
+  font-size: 0.5em;
   width: 95%;
-  margin:14px 0px;
+  margin-top: 5%;
   background-color: rgba(0, 0, 0, 0.847);
   color: white;
   border-radius: 10px;
 }
 
 .nav-button {
-  width: 100px;
-  margin-left: 40px;
+  width: 15%;
+  margin-left: 5%;
   background-color: rgba(0, 0, 0, 0.847);
   color: white;
   border-radius: 10px;
+  object-fit: contain;
 }
 
 .project-title {
