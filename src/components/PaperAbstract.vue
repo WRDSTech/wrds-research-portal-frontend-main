@@ -293,6 +293,10 @@ export default {
 .abstract-content {
   margin-left: 10px;
   margin-right: 10px;
+  // max-height: 120px;
+  height: 100px;
+  overflow-y: auto;
+  text-overflow: ellipsis;
 }
 
 img.image {
@@ -329,8 +333,11 @@ img.image-square {
 }
 
 .header {
-  text-align: left;
   margin: 0px;
+  text-align: center;
+  inline-size: 300px;
+  display: inline;
+  text-overflow: ellipsis;
 }
 
 .card-search {
@@ -370,22 +377,24 @@ img.image-square {
 .nav-button-search {
   font-size: 0.5em;
   width: 95%;
-  margin-top: 1.2em;
-  margin-bottom: 1.2em;
+  // margin-top: 1.2em;
+  // margin-bottom: 1.2em;
   background-color: rgba(0, 0, 0, 0.847);
   color: white;
   border-radius: 10px;
+  display: inline-block;
+  bottom: 0px;
 }
 
-.nav-button-search-right {
-  margin-top: 2.7em;
-}
+// .nav-button-search-right {
+//   margin-top: 2.7em;
+// }
 
-@media (min-width: 1230px) {
-  .nav-button-search-up-left {
-    margin-top: 2.9em;
-  }
-}
+// @media (min-width: 1230px) {
+//   .nav-button-search-up-left {
+//     margin-top: 2.9em;
+//   }
+// }
 
 .nav-button {
   width: 15%;
@@ -403,14 +412,15 @@ img.image-square {
   margin: 5px 0 5px 0;
   margin-bottom: -20px;
   margin-left: -10px;
+  text-overflow: ellipsis;
 }
 
-.project-title-left {
-  font-size: 1.2em;
-  font-weight: bold;
-  margin: 5px 0 5px 0;
-  margin-bottom: -23px;
-}
+// .project-title-left {
+//   font-size: 1.2em;
+//   font-weight: bold;
+//   margin: 5px 0 5px 0;
+//   margin-bottom: -23px;
+// }
 
 .abstract {
   margin: 0px;
