@@ -303,8 +303,11 @@ img.image-square {
 }
 
 .header {
-  text-align: left;
   margin: 0px;
+  text-align: center;
+  inline-size: 300px;
+  display: inline;
+  text-overflow: ellipsis;
 }
 
 .card-search {
@@ -369,12 +372,12 @@ img.image-square {
   text-overflow: ellipsis;
 }
 
-.project-title-left {
-  font-size: 1.2em;
-  font-weight: bold;
-  margin: 5px 0 5px 0;
-  margin-bottom: -23px;
-}
+// .project-title-left {
+//   font-size: 1.2em;
+//   font-weight: bold;
+//   margin: 5px 0 5px 0;
+//   margin-bottom: -23px;
+// }
 
 .abstract {
   margin: 0px;
