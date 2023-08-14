@@ -372,12 +372,13 @@ img.image-square {
   text-overflow: ellipsis;
 }
 
-// .project-title-left {
-//   font-size: 1.2em;
-//   font-weight: bold;
-//   margin: 5px 0 5px 0;
-//   margin-bottom: -23px;
-// }
+.project-title-left {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 5px 0 5px 0;
+  margin-bottom: -23px;
+  text-align: left !important;
+}
 
 .abstract {
   margin: 0px;
