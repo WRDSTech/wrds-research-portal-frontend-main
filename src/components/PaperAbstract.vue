@@ -23,9 +23,9 @@
         </el-card>
       </el-col>
       <el-col :span="24" :lg="12">
-        <el-card class="card-search">
+        <el-card class="card-search card-small">
           <hr />
-          <img src="@/assets/graph.svg" alt="Image 2" class="image" />
+          <img src="@/assets/graph.svg" alt="Image 2" class="image image-small" />
           <div slot="header" class="header">
             <h3 class="project-title">Company Competition Graph</h3>
           </div>
@@ -80,136 +80,134 @@
             </p>
           </div>
           <el-button @click="$router.push({ name: 'NoveltyInFinance' })" type="plain" size="small"
-            class="nav-button-search nav-button-search-right"><span class="button-text">Try it out!</span></el-button>
+            class="nav-button-search"><span class="button-text">Try it out!</span></el-button>
         </el-card>
       </el-col>
     </el-row>
-    <div class="other-pro">
-      <h3 id="Projects" class="title-pro">Other Projects</h3>
-      <el-row type="flex" justify="center">
-        <el-col :lg="21" :xl="18">
-          <el-card class="project-card">
-            <hr />
-            <div slot="header" class="header">
-              <h3 class="project-title-left">Trends in Research</h3>
-            </div>
-            <div class="project-intro">
-              <div class="intro-content">
-                <div class="image-container">
-                  <img src="@/assets/trends.svg" alt="Image 5" class="image-square" />
-                </div>
-                <p class="project-content">
-                  The graph illustrates the trends in research, showcasing the number of papers published over a specified
-                  period and their corresponding percentages. It serves as a valuable tool for researchers, policymakers,
-                  and stakeholders in gauging the progress and impact of scholarly endeavors over time.
-                </p>
-                <el-button @click="$router.push({ name: 'ResearchTrend' })" type="plain" size="small"
-                  class="nav-button"><span class="button-text">Try it out!</span></el-button>
+    <h3 id="Projects" class="title-pro">Other Projects</h3>
+    <el-row class="container">
+      <el-col :lg="21" :xl="18">
+        <el-card class="project-card">
+          <hr />
+          <div slot="header" class="header">
+            <h3 class="project-title-left">Trends in Research</h3>
+          </div>
+          <div class="project-intro">
+            <div class="intro-content">
+              <div class="image-container">
+                <img src="@/assets/trends.svg" alt="Image 5" class="image-square" />
               </div>
+              <p class="project-content">
+                The graph illustrates the trends in research, showcasing the number of papers published over a specified
+                period and their corresponding percentages. It serves as a valuable tool for researchers, policymakers,
+                and stakeholders in gauging the progress and impact of scholarly endeavors over time.
+              </p>
+              <el-button @click="$router.push({ name: 'ResearchTrend' })" type="plain" size="small"
+                class="nav-button"><span class="button-text">Try it out!</span></el-button>
             </div>
-          </el-card>
-        </el-col>
-      </el-row>
-      <el-row type="flex" justify="center">
-        <el-col :lg="21" :xl="18">
-          <el-card class="project-card">
-            <hr />
-            <div slot="header" class="header">
-              <h3 class="project-title-left">Footnote Demo</h3>
-            </div>
-            <div class="project-intro">
-              <div class="intro-content">
-                <div class="image-container">
-                  <img src="@/assets/footnotes.svg" alt="Image 6" class="image-square" />
-                </div>
-                <p class="project-content">
-                  The footnote demo showcases instances where directors become entitled to full acceleration of vesting of
-                  equity awards upon retirement, based on their tenure on the board. It provides insights into the equity
-                  compensation practices and policies within the company and highlight specific transactions involving the
-                  issuance of shares subject to PRSU awards.
-                </p>
-                <el-button @click="$router.push({ name: 'Footnote' })" type="plain" size="small" class="nav-button"><span
-                    class="button-text">Try it out!</span></el-button>
+          </div>
+        </el-card>
+      </el-col>
+    </el-row>
+    <el-row class="container">
+      <el-col :lg="21" :xl="18">
+        <el-card class="project-card">
+          <hr />
+          <div slot="header" class="header">
+            <h3 class="project-title-left">Footnote Demo</h3>
+          </div>
+          <div class="project-intro">
+            <div class="intro-content">
+              <div class="image-container">
+                <img src="@/assets/footnotes.svg" alt="Image 6" class="image-square" />
               </div>
+              <p class="project-content">
+                The footnote demo showcases instances where directors become entitled to full acceleration of vesting of
+                equity awards upon retirement, based on their tenure on the board. It provides insights into the equity
+                compensation practices and policies within the company and highlight specific transactions involving the
+                issuance of shares subject to PRSU awards.
+              </p>
+              <el-button @click="$router.push({ name: 'Footnote' })" type="plain" size="small" class="nav-button"><span
+                  class="button-text">Try it out!</span></el-button>
             </div>
-          </el-card>
-        </el-col>
-      </el-row>
-      <el-row type="flex" justify="center">
-        <el-col :lg="21" :xl="18">
-          <el-card class="project-card">
-            <hr />
-            <div slot="header" class="header">
-              <h3 class="project-title-left">Sample Research Demo</h3>
-            </div>
-            <div class="project-intro">
-              <div class="intro-content">
-                <div class="image-container">
-                  <img src="@/assets/research.svg" alt="Image 7" class="image-square" />
-                </div>
-                <p class="project-content">
-                  The sample research demo provides a glimpse into ongoing research activities and highlights a selection
-                  of projects from a diverse range of fields. It serves as a valuable resource for gaining insights into
-                  the current trends and areas of focus within the research community.
-                </p>
-                <el-button @click="$router.push({ name: 'ResearchDemo' })" type="plain" size="small"
-                  class="nav-button"><span class="button-text">Try it out!</span></el-button>
+          </div>
+        </el-card>
+      </el-col>
+    </el-row>
+    <el-row class="container">
+      <el-col :lg="21" :xl="18">
+        <el-card class="project-card">
+          <hr />
+          <div slot="header" class="header">
+            <h3 class="project-title-left">Sample Research Demo</h3>
+          </div>
+          <div class="project-intro">
+            <div class="intro-content">
+              <div class="image-container">
+                <img src="@/assets/research.svg" alt="Image 7" class="image-square" />
               </div>
+              <p class="project-content">
+                The sample research demo provides a glimpse into ongoing research activities and highlights a selection
+                of projects from a diverse range of fields. It serves as a valuable resource for gaining insights into
+                the current trends and areas of focus within the research community.
+              </p>
+              <el-button @click="$router.push({ name: 'ResearchDemo' })" type="plain" size="small"
+                class="nav-button"><span class="button-text">Try it out!</span></el-button>
             </div>
-          </el-card>
-        </el-col>
-      </el-row>
-      <el-row type="flex" justify="center">
-        <el-col :lg="21" :xl="18">
-          <el-card class="project-card">
-            <hr />
-            <div slot="header" class="header">
-              <h3 class="project-title-left">Itemized 10K Search Demo (Postgreql)</h3>
-            </div>
-            <div class="project-intro">
-              <div class="intro-content">
-                <div class="image-container">
-                  <img src="@/assets/itemized.svg" alt="Image 8" class="image-square" />
-                </div>
-                <p class="project-content">
-                  The 10K Itemization Demo (PostgreSQL) showcases sample entries that represents a specific company's
-                  filing details extracted from the Form 10-K, a comprehensive annual report filed by public companies in
-                  the United States. The demo provides key information such as the CIK (Central Index Key) code, company
-                  name, filing date, form type, and the specific item addressed in each entry.
-                </p>
-                <el-button @click="$router.push({ name: '10KSearchPg' })" type="plain" size="small" class="nav-button"><span
-                    class="button-text">Try it out!</span></el-button>
+          </div>
+        </el-card>
+      </el-col>
+    </el-row>
+    <el-row class="container">
+      <el-col :lg="21" :xl="18">
+        <el-card class="project-card">
+          <hr />
+          <div slot="header" class="header">
+            <h3 class="project-title-left">Itemized 10K Search Demo (Postgreql)</h3>
+          </div>
+          <div class="project-intro">
+            <div class="intro-content">
+              <div class="image-container">
+                <img src="@/assets/itemized.svg" alt="Image 8" class="image-square" />
               </div>
+              <p class="project-content">
+                The 10K Itemization Demo (PostgreSQL) showcases sample entries that represents a specific company's
+                filing details extracted from the Form 10-K, a comprehensive annual report filed by public companies in
+                the United States. The demo provides key information such as the CIK (Central Index Key) code, company
+                name, filing date, form type, and the specific item addressed in each entry.
+              </p>
+              <el-button @click="$router.push({ name: '10KSearchPg' })" type="plain" size="small" class="nav-button"><span
+                  class="button-text">Try it out!</span></el-button>
             </div>
-          </el-card>
-        </el-col>
-      </el-row>
-      <el-row type="flex" justify="center">
-        <el-col :lg="21" :xl="18">
-          <el-card class="project-card">
-            <hr />
-            <div slot="header" class="header">
-              <h3 class="project-title-left">Itemized 10K Search Demo (SQLite)</h3>
-            </div>
-            <div class="project-intro">
-              <div class="intro-content">
-                <div class="image-container">
-                  <img src="@/assets/sqllite.svg" alt="Image 9" class="image-square" />
-                </div>
-                <p class="project-content">
-                  The 10K Itemization Demo provides a specific entry from the dataset, featuring details about a company
-                  named Detonics Small Arms Ltd. This entry corresponds to their filing on Form 10-K/A, which is an
-                  amendment to the annual report, and is dated January 5, 2010. The entry is categorized under ITEM 9A,
-                  which typically pertains to disclosures related to controls and procedures.
-                </p>
-                <el-button @click="$router.push({ name: '10KSearch' })" type="plain" size="small" class="nav-button"><span
-                    class="button-text">Try it out!</span></el-button>
+          </div>
+        </el-card>
+      </el-col>
+    </el-row>
+    <el-row class="container">
+      <el-col :lg="21" :xl="18">
+        <el-card class="project-card">
+          <hr />
+          <div slot="header" class="header">
+            <h3 class="project-title-left">Itemized 10K Search Demo (SQLite)</h3>
+          </div>
+          <div class="project-intro">
+            <div class="intro-content">
+              <div class="image-container">
+                <img src="@/assets/sqllite.svg" alt="Image 9" class="image-square" />
               </div>
+              <p class="project-content">
+                The 10K Itemization Demo provides a specific entry from the dataset, featuring details about a company
+                named Detonics Small Arms Ltd. This entry corresponds to their filing on Form 10-K/A, which is an
+                amendment to the annual report, and is dated January 5, 2010. The entry is categorized under ITEM 9A,
+                which typically pertains to disclosures related to controls and procedures.
+              </p>
+              <el-button @click="$router.push({ name: '10KSearch' })" type="plain" size="small" class="nav-button button-small"><span
+                  class="button-text">Try it out!</span></el-button>
             </div>
-          </el-card>
-        </el-col>
-      </el-row>
-    </div>
+          </div>
+        </el-card>
+      </el-col>
+    </el-row>
   </div>
 </template>
 
@@ -225,17 +223,9 @@ export default {
   text-align: center;
   padding-top: 20px;
   padding-bottom: 50px;
-  // padding-left: 8%;
   width: 100%;
   height: 100%;
   position: inherit;
-}
-
-.other-pro {
-  justify-content: center;
-  position: relative;
-  flex-direction: column;
-  align-items: center;
 }
 
 .intro-content {
@@ -268,7 +258,7 @@ export default {
 }
 
 .title-pub {
-  margin-top: 3%;
+  margin-top: 20px;
   margin-bottom: 2%;
   text-align: center;
   font-size: 1.8rem;
@@ -276,7 +266,7 @@ export default {
 }
 
 .title-pro {
-  margin-top: 8%;
+  margin-top: 70px;
   font-size: 1.8rem;
   color: rgb(253, 253, 253);
   position: relative;
@@ -286,13 +276,16 @@ export default {
   margin: 0 auto;
   max-width: 1000px;
   display: flex;
-  // align-items: center;
   justify-content: center;
 }
 
 .abstract-content {
   margin-left: 10px;
   margin-right: 10px;
+  height: 160px;
+  object-fit: contain;
+  font-size: 0.9rem;
+  text-overflow: ellipsis;
 }
 
 img.image {
@@ -302,29 +295,10 @@ img.image {
   margin-top: 5px;
 }
 
-@media (max-width: 1200px) {
-  img.image {
-    width: 250px;
-    height: 120px;
-    object-fit: contain;
-    margin-top: 5px;
-  }
-}
-
-@media (max-width: 960px) {
-  img.image {
-    width: 200px;
-    height: 120px;
-    object-fit: contain;
-    margin-top: 5px;
-  }
-}
-
 img.image-square {
   width: 80px;
   height: 80px;
   margin-left: 20px;
-  margin-right: 20px;
   object-fit: cover;
 }
 
@@ -350,18 +324,15 @@ img.image-square {
   transition: box-shadow .3s;
   margin-top: 20px;
   padding-bottom: 1%;
-  // width: 850px;
   object-fit: contain;
   border-radius: 10px;
   background-color: rgb(239, 239, 239);
   position: relative;
   display: inline-block;
-  align-items:end;
+  align-items: center;
 }
 
 .project-intro {
-  // display: flex;
-  // flex-direction: column;
   text-align: left;
   margin-top: 2%;
   margin-bottom: 10px;
@@ -370,25 +341,15 @@ img.image-square {
 .nav-button-search {
   font-size: 0.5em;
   width: 95%;
-  margin-top: 1.2em;
-  margin-bottom: 1.2em;
+  margin-top: 10px;
   background-color: rgba(0, 0, 0, 0.847);
   color: white;
   border-radius: 10px;
-}
-
-.nav-button-search-right {
-  margin-top: 2.7em;
-}
-
-@media (min-width: 1230px) {
-  .nav-button-search-up-left {
-    margin-top: 2.9em;
-  }
+  display: inline-block;
+  bottom: 0px;
 }
 
 .nav-button {
-  width: 15%;
   margin-left: 5%;
   background-color: rgba(0, 0, 0, 0.847);
   color: white;
@@ -398,11 +359,14 @@ img.image-square {
 
 .project-title {
   text-align: center;
-  font-size: 1.2em;
+  font-size: 1.3rem;
   font-weight: bold;
   margin: 5px 0 5px 0;
   margin-bottom: -20px;
   margin-left: -10px;
+  justify-content: center;
+  object-fit: contain;
+  text-overflow: ellipsis;
 }
 
 .project-title-left {
@@ -415,6 +379,112 @@ img.image-square {
 .abstract {
   margin: 0px;
   margin-left: 10px;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 1200px) {
+  img.image {
+    width: 200px;
+    height: 120px;
+    object-fit: contain;
+    margin-top: 5px;
+  }
+
+  .project-title {
+    font-size: 1.1rem !important;
+  }
+
+  .abstract {
+    font-size: 0.9rem !important;
+  }
+
+  .abstract-content {
+    font-size: 0.8rem !important;
+  }
+}
+
+@media (max-width: 960px) {
+  img.image {
+    width: 180px;
+    height: 120px;
+    object-fit: contain;
+    margin-top: 5px;
+  }
+
+  .project-title {
+    font-size: 0.9rem !important;
+  }
+
+  .abstract {
+    font-size: 1rem !important;
+  }
+
+  .abstract-content {
+    font-size: 0.75rem !important;
+  }
+}
+
+@media (max-width: 890px){
+  .abstract-content {
+    font-size: 0.65rem !important;
+  }
+}
+
+@media (max-width: 850px) {
+  .image-square {
+    display: none;
+  }
+
+  .button-text {
+    font-size: 0.3rem;
+  }
+
+  .container {
+      display: block; /* Show the el-col elements in a single column */
+  }
+
+  .abstract-content{
+    font-size: 0.8rem !important;
+    height: 100%;
+  }
+
+  // img.image{
+  //   display: none;
+  // }
+
+  .image-container {
+    display: none;
+  }
+
+  .nav-button {
+    margin-top: 0%;
+  }
+
+  .project-content {
+    margin-left: 0%;
+  }
+
+  .title-pro {
+    font-size: 1.4rem;
+  }
+
+  .title-pub {
+    font-size: 1.4rem;
+  }
+
+  .project-title-left {
+    font-size: 1.0rem !important;
+  }
+
+  .abstract {
+    font-size: 0.9rem !important;
+  }
+
+  .intro-content {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
 }
 
 p {
